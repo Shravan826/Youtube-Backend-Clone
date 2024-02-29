@@ -1,0 +1,26 @@
+Cors:
+1)When we use app.use it is basically for doing to set middleware or do cofiguration related changes.
+2)It is Cross-origin resource sharing.
+3)It used to validate the requesting resource.
+4)We are using cors with cors dependency from npm js.
+
+Middleware:
+1)Have to use middleware which is working in between of request and response.
+2)Our API will have 4 types err, req, res, next.
+3)next is used to pass from one middleware to another.
+
+
+
+
+
+
+
+
+
+
+
+Production level practice:
+1)Configure cors by setting particular origin only & credentials.
+2)Now in the request we are only getting json or text data as body data or param's which can be specified under a par limit. To not crash the server with huge amount of data.
+3)Always use middleware's
+
