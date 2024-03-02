@@ -1,8 +1,20 @@
+GeneralNote:
+1)In js arrow function there is no this keyword so they doesn't know the context.
+
+
+
 Cors:
 1)When we use app.use it is basically for doing to set middleware or do cofiguration related changes.
 2)It is Cross-origin resource sharing.
 3)It used to validate the requesting resource.
 4)We are using cors with cors dependency from npm js.
+
+Model:
+1)When we have to search frequently anything it is better to state index as true. But we can't do it for every field becuase it will lower the performance.Therefore by thinking wisely we have to set index.
+
+2)IMP: For using encryption before saving it to database using mongoose middleware hook. Pre we can't use arrow function as callback. we must use normal callback function.
+
+
 
 Middleware:
 1)Have to use middleware which is working in between of request and response.
