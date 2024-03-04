@@ -21,6 +21,17 @@ Middleware:
 2)Our API will have 4 types err, req, res, next.
 3)next is used to pass from one middleware to another.
 
+File Upload:
+1)For file uploading we have to use multer.
+2)For storing it we have to use cloudnary
+3)In production we have to first temporary store it in our server then upload it to cloudnary. Becuase if the attempt was failed by any reason we can re-attempt it because it is in our server.
+4)But if we store it temprory in our server it can create security issues that we have to check. 
+5)we have fs inbuilt in nodejs which is filesystem that we will use to perfom file hnadling.
+6)For deleting we will have unlink because it is not directly deleted it is just unlinking the file that is general working of operating system.
+7)Always have to use try-catch for file-uploading to hnadlw un-necessary problems.
+8)In catch in syncronous way we have to remove the files from our local server because problamtic files should not be there.
+9)we can rename it by adding random suffix to name to do not conflict with same name.
+
 
 
 
@@ -35,4 +46,5 @@ Production level practice:
 1)Configure cors by setting particular origin only & credentials.
 2)Now in the request we are only getting json or text data as body data or param's which can be specified under a par limit. To not crash the server with huge amount of data.
 3)Always use middleware's
+4)In production we have to first temporary store it in our server then upload it to cloudnary. Becuase if the attempt was failed by any reason we can re-attempt it because it is in our server.
 
